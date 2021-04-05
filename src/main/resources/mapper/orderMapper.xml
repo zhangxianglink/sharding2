@@ -12,8 +12,8 @@
         <result column="channel" property="channel"/>
         <result column="trade_no" property="tradeNo"/>
         <result column="user_id" property="userId"/>
-        <result column="update_time" property="updateTime"/>
-        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" typeHandler="com.example.shard2.config.LocalDateTimeHandler"/>
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" typeHandler="com.example.shard2.config.LocalDateTimeHandler"/>
         <result column="remark" property="remark"/>
     </resultMap>
 
