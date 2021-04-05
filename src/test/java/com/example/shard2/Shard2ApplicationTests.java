@@ -22,7 +22,7 @@ class Shard2ApplicationTests {
 		order.setChannel("zfb");
 		order.setStatus("ok");
 		order.setCurrency("cny");
-		order.setCreateTime(new Date());
+		order.setCreateTime(LocalDateTime.now());
 		orderService.insert(order);
 	}
 
